@@ -36,4 +36,6 @@ typedef struct		s_bitswapper
 	t_gfx			*image;
 }					t_bitswapper;
 
+void	bmp_export(t_gfx *gfx);
+
 #endif

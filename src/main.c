@@ -43,6 +43,9 @@ int		key_handle(uint32_t key, t_bitswapper *bts)
 			bts->image->data[i] = ft_bswap(bts->image->data[i]);
 		printf("Bytes Shifted around\n");
 		break;
+	case SDL_SCANCODE_E:
+		bmp_export(bts->image);
+		break;
 	default:
 		break;
 	}

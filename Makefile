@@ -11,10 +11,9 @@
 # **************************************************************************** #
 
 NAME	= bitswapper.exe
-FLAG	= -g -m64 -no-pie -O2
+FLAG	= -m64 -no-pie -O2
 ELF 	= win64
-SRCFILE	= main.c bmp_reader.c
-#ft_bzero.c ft_memcpy.c
+SRCFILE	= main.c bmp_reader.c bmp_export.c
 ASMFILE	= ft_strlen.asm ft_putstr_fd.asm ft_putendl_fd.asm \
 		ft_putstr.asm ft_putendl.asm ft_putchar.asm ft_memset.asm \
 		ft_atoi.asm ft_strcpy.asm ft_strclr.asm ft_strequ.asm \
@@ -42,7 +41,6 @@ all: $(NAME)
 ./obj/%.o:./src/%.c
 	@mkdir -p obj
 	gcc $(FLAG) -c $< -o $@
-#	gcc $(FLAG) -S $< -o $@
 
 ./obj/%.o:./asm/%.asm
 	@mkdir -p obj

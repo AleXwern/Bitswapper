@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/30 12:25:10 by anystrom          #+#    #+#             */
-/*   Updated: 2021/04/15 00:28:26 by marvin           ###   ########.fr       */
+/*   Updated: 2021/04/15 21:51:15 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,19 @@ typedef struct	s_bmpinfo
 	t_dword		yppm;
 	t_dword		colcount;
 	t_dword		impcol;
+	t_dword		red;
+	t_dword		green;
+	t_dword		blue;
+	t_dword		alpha;
+	t_dword		win;
+	char		cse[0x24];
+	t_dword		rgamma;
+	t_dword		ggamma;
+	t_dword		bgamma;
+	t_dword		bV5Intent;
+	t_dword		bV5ProfileData;
+	t_dword		bV5ProfileSize;
+	t_dword		bV5Reserved;
 }				t_bmpinfo;
 
 # pragma pack(pop)
