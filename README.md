@@ -3,7 +3,7 @@ Small utility tool I made to mess with image bits. I had some images that were i
 Also compiled SDL2 in command line on Windows. Easier then I initially thought.
 
 **Linux/UNIX**<br>
-Makefile is not prepared for SDL2 but you need Make, GCC, NASM and SDL2. In order: compiling, C, Assembly and graphical interface
+Makefile is not prepared for SDL2 and half of the Assembly code breaks because function parameter handling but you need Make, GCC, NASM and SDL2. In order: compiling, C, Assembly and graphical interface.
 
 **Win64**<br>
 You need Make, GCC from MinGW, NASM and SDL2 and then it should compile from command prompt with make command
